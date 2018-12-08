@@ -1,4 +1,4 @@
 module_mana
 ============
 
-FruityWifi mana module
+BlackBulb mana module

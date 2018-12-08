@@ -1,7 +1,7 @@
 <?
 $mod_name="mana";
 $mod_version="1.6";
-$mod_path="/usr/share/fruitywifi/www/modules/$mod_name";
+$mod_path="/usr/share/blackbulb/www/modules/$mod_name";
 $mod_logs="$log_path/$mod_name.log"; 
 $mod_logs_history="$mod_path/includes/logs/";
 $mod_panel="show";
@@ -9,7 +9,7 @@ $mod_type="service";
 $mod_alias="Mana";
 
 # EXEC
-$bin_danger = "/usr/share/fruitywifi/bin/danger";
+$bin_danger = "/usr/share/blackbulb/bin/danger";
 $bin_sudo = "/usr/bin/sudo";
 $bin_hostapd = "$mod_path/includes/hostapd";
 $bin_hostapd_cli = "$mod_path/includes/hostapd_cli";
@@ -25,6 +25,6 @@ $bin_route = "/sbin/route";
 $bin_perl = "/usr/bin/perl";
 
 # ISUP
-//$mod_isup="$bin_danger \"/usr/share/fruitywifi/www/modules/$mod_name/includes/hostapd_cli -p /var/run/hostapd karma_get_state | tail -1 | grep 'KARMA EN'\"";
-$mod_isup="$bin_sudo /usr/share/fruitywifi/www/modules/$mod_name/includes/hostapd_cli -p /var/run/hostapd mana_get_state | tail -1 | grep 'MANA EN'";
+//$mod_isup="$bin_danger \"/usr/share/blackbulb/www/modules/$mod_name/includes/hostapd_cli -p /var/run/hostapd karma_get_state | tail -1 | grep 'KARMA EN'\"";
+$mod_isup="$bin_sudo /usr/share/blackbulb/www/modules/$mod_name/includes/hostapd_cli -p /var/run/hostapd mana_get_state | tail -1 | grep 'MANA EN'";
 ?>
